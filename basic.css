@@ -22,6 +22,11 @@
     font-weight: 100 900; font-style: italic;
     src: url('/fonts/museomoderno-italic.woff2'), format("woff2-variations"), local('MuseoModerno Italic')
 }
+@font-face {
+    font-family: 'Outfit'; font-display: block;
+    font-weight: 100 900; font-style: italic;
+    src: url('/fonts/outfit.woff2'), format("woff2-variations"), local('Outfit')
+}
 
 :root {
     --bg: black linear-gradient(#f80b,#000);
@@ -46,7 +51,7 @@
 
 html {
     background: var(--bg);
-    font-family: Inter, sans-serif;
+    font-family: "Inter", sans-serif;
     color: var(--text);
     position: relative;
     min-height: 100vh;
