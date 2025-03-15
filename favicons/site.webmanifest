@@ -1,0 +1,13 @@
+{
+	"name": "fen's website!", "short_name": "fen.cx",
+	"description": "fen is a cat on the internet",
+	"theme_color": "#ff8800", "background_color": "#000", "display": "browser",
+	"icons": [
+		{ "purpose": "any", "sizes": "192x192", "src": "icon-192.png", "type": "image/png" },
+		{ "purpose": "any", "sizes": "256x256", "src": "icon-256.png", "type": "image/png" },
+		{ "purpose": "any", "sizes": "512x512", "src": "icon-512.png", "type": "image/png" },
+		{ "purpose": "maskable", "sizes": "192x192", "src": "maskable-192.png", "type": "image/png" },
+		{ "purpose": "maskable", "sizes": "512x512", "src": "maskable-512.png", "type": "image/png" },
+		{ "purpose": "monochrome", "sizes": "150x150", "src": "monochrome.svg", "type": "image/svg+xml" }
+	]
+}

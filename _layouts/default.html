@@ -1,0 +1,46 @@
+---
+layout: meta
+---
+<header class="box" id="header">
+    <!--<div id="aqua" class="primary"><span>fenbyte</span></div>-->
+    <h1>fen</h1>
+    <p>they/she</p>
+</header>
+<div id="container">
+    <div class="box sidebar" id="leftsidebar">
+        <nav>
+            <a class="button{% if page.url == '/home.html' %} current{% endif %}" href="/home.html" id="home">home</a>
+            <a class="button{% if page.url == '/about.html' %} current{% endif %}" href="/about.html" id="about">about</a>
+            <a class="button{% if page.url == '/art.html' %} current{% endif %}" href="/art.html" id="art">art</a>
+            <a class="button{% if page.url == '/guestbook.html' %} current{% endif %}" href="/guestbook.html" id="guestbook">guestbook</a>
+            <a class="button{% if page.url == '/blog.html' %} current{% endif %}" href="/blog.html" id="blog">️blog</a>
+            <a class="button{% if page.url == '/tech.html' %} current{% endif %}" href="/tech.html" id="tech">tech</a>
+        </nav>
+        <div id="socials">
+            <p class="smallcaps">↓ find me elsewhere!</p>
+            <a href="https://discord.com/users/409770960430825495" id="discord">fen.cx</a>
+            <a href="https://bsky.app/profile/fen.cx" id="bluesky">fen.cx</a>
+        </div>
+    </div>
+
+    <main class="box" id="middle">{{content}}</main>
+    
+    <div class="box sidebar" id="rightsidebar">
+        <noscript>looks like your browser doesn't support javascript! that's fine, but the cool stuff on this sidebar wont work &gt;o&lt;</noscript>
+        <div id="nowplayingheader">
+            <p class="smallcaps">↓ now playing</p>
+            <a href="https://www.last.fm/user/s16le" id="lastfm"><img src="/icons/lastfm.svg" title="s16le on last.fm" alt="s16le on last.fm"></a>
+        </div>
+        <a id="lastfmlink"><div id="nowplaying">
+            <img src="/images/cover.svg" id="coverart" width="56" height="56">
+            <div>
+                <p id="songtitle">nothing playing...</p>
+                <p id="songalbum"></p>
+                <p id="songartist"></p>
+            </div>
+            
+        </div></a>
+        <p class="smallcaps">its <time id="mytime">??:??:??</time> for me!</p>
+        <small>website written and designed in pure html+css+js by fen with no frameworks, generated using jekyll, and hosted on <a href="https://nekoweb.org">nekoweb</a>. it was built at {{ site.time | date: "%F %T %Z" | downcase}}. you can get a copy of the source files here: <a href="https://example.com">source</a></small>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% if page.fulltitle %}
+	<title>{{ page.fulltitle }}</title>
+	{% else %}
+	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+	{% endif %}
+	<link rel="stylesheet" href="/basic.css">
+    {%- if page.style %}{% for style in page.style %}
+	<link rel="stylesheet" href="/{{style}}.css">
+	{%- endfor %}{% endif %}
+	{%- if page.script %}{% for script in page.script %}
+	<script src="/{{script}}.js" defer></script>
+	{%- endfor %}{% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="icon" href="/favicons/icon-16.png" type="image/png" sizes="16x16">
+	<link rel="icon" href="/favicons/icon-32.png" type="image/png" sizes="32x32">
+	<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png">
+	<meta name="theme-color" content="#ff8800">
+	<meta name="twitter:card" content="summary">
+	<meta name="og:title" content="{{ page.title }}">
+	<meta name="og:type" content="website">
+	<meta name="og:url" content="https://fen.cx/">
+	<meta name="og:image" content="https://fen.cx/images/fenalpha.png">
+	<meta name="og:site_name" content="fen.cx">
+	<meta name="og:description" content="{{ page.subheader }}">
+</head>
+<body>
+    {{content}}
+</body>
+</html>

@@ -1,0 +1,8 @@
+title: "fen's website!"
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      style: "main"
+      script: "main"
