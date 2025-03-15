@@ -49,12 +49,15 @@
     --logo-glow: #ff880080;
 }
 
+html {
+    min-height: 100vh;
+}
+
 body {
     background: var(--bg);
     font-family: "Inter", sans-serif;
     color: var(--text);
     position: relative;
-    min-height: 100vh;
     font-size: 0.9em;
     width: 1008px;
     max-width: 100%;

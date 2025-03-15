@@ -144,14 +144,15 @@ ul#meright {
 */
 nav a:before,#socials a:before {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     content: '\200B';
     vertical-align: bottom;
     margin-right: 4px;
 	background-position: center;
 	background-repeat: no-repeat;
 	filter: invert(1);
+	background-size: contain;
 }
 
 nav a.current:before {
@@ -207,8 +208,8 @@ nav a.current {
 }
 
 #socials a:before {
-	width: 20px;
-	height: 20px;
+	width: 24px;
+	height: 24px;
 	margin-right: 16px;
 }
 
@@ -220,7 +221,7 @@ nav a.current {
 	background-color: var(--slash-colour);
 	position: absolute;
 	top: 2px;
-	left: 26px;
+	left: 31px;
 	transform: rotate(15deg);
 	border-radius: 16px;
 }
