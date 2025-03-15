@@ -49,16 +49,17 @@
     --logo-glow: #ff880080;
 }
 
-html {
+body {
     background: var(--bg);
     font-family: "Inter", sans-serif;
     color: var(--text);
     position: relative;
     min-height: 100vh;
     font-size: 0.9em;
-    width: 1024px;
+    width: 1008px;
     max-width: 100%;
     margin: auto;
+    padding: 8px;
 }
 
 h1 {
@@ -140,5 +141,5 @@ a {
     font-family: "Noto Sans", sans-serif;
     font-variant: small-caps;
 	font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1rem;
 }
