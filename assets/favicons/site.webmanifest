@@ -1,6 +1,6 @@
 {
 	"name": "fen's website!", "short_name": "fen.cx",
-	"description": "fen is a cat on the internet",
+	"description": "the website of a nerdy furry queer orange internet cat",
 	"theme_color": "#ff8800", "background_color": "#000", "display": "browser",
 	"icons": [
 		{ "purpose": "any", "sizes": "192x192", "src": "icon-192.png", "type": "image/png" },

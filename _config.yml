@@ -1,6 +1,6 @@
 url: "https://fen.cx"
 title: "fen's website!"
-description: "the website of a nerdy furry queer orange cat"
+description: "the website of a nerdy furry queer orange internet cat"
 defaults:
   - scope:
       path: ""
