@@ -10,22 +10,26 @@
     {%- if page.style %}{% for style in page.style %}
 	<link rel="stylesheet" href="/{{style}}.css">
 	{%- endfor %}{% endif %}
-	{%- if page.script %}{% for script in page.script %}
-	<script src="/{{script}}.js" defer></script>
-	{%- endfor %}{% endif %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preload" href="/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="icon" href="/favicons/icon-16.png" type="image/png" sizes="16x16">
 	<link rel="icon" href="/favicons/icon-32.png" type="image/png" sizes="32x32">
 	<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png">
+	{%- if page.script %}{% for script in page.script %}
+	<script src="/{{script}}.js" defer></script>
+	{%- endfor %}{% endif %}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#ff8800">
 	<meta name="twitter:card" content="summary">
-	<meta name="og:title" content="{{ page.title }}">
-	<meta name="og:type" content="website">
-	<meta name="og:url" content="https://fen.cx/">
-	<meta name="og:image" content="https://fen.cx/images/fenalpha.png">
-	<meta name="og:site_name" content="fen.cx">
-	<meta name="og:description" content="{{ page.subheader }}">
+	<meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://fen.cx/">
+	<meta property="og:image" content="http://127.0.0.1:4000/images/fenalpha-400px.png">
+	<meta property="og:site_name" content="fen.cx">
+	<meta property="og:description" content="{{ page.description | default: site.description }}">
+	<meta property="og:image:alt" content="an orange and white cat with blue eyes, glasses, and black and blonde hair">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="400">
+	<meta property="og:locale" content="en_GB">
 </head>
 <body>
     {{content}}
