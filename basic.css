@@ -51,6 +51,7 @@
 
 body {
     background: var(--bg);
+    background-attachment: fixed;
     font-family: "Inter", sans-serif;
     color: var(--text);
     position: relative;
