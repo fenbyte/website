@@ -164,27 +164,27 @@ nav a.current {
 }
 
 #home:before {
-    background-image: url("icons/house.svg");
+    background-image: url("/assets/icons/house.svg");
 }
 
 #about:before {
-    background-image: url("icons/me.svg");
+    background-image: url("/assets/icons/me.svg");
 }
 
 #art:before {
-    background-image: url("icons/brush.svg");
+    background-image: url("/assets/icons/brush.svg");
 }
 
 #guestbook:before {
-    background-image: url("icons/book.svg");
+    background-image: url("/assets/icons/book.svg");
 }
 
 #blog:before {
-    background-image: url("icons/newspaper.svg");
+    background-image: url("/assets/icons/newspaper.svg");
 }
 
 #tech:before {
-    background-image: url("icons/computer.svg");
+    background-image: url("/assets/icons/computer.svg");
 }
 
 #socials {
@@ -227,11 +227,11 @@ nav a.current {
 }
 
 #discord:before {
-	background-image: url("icons/discord.svg");
+	background-image: url("/assets/icons/discord.svg");
 }
 
 #bluesky:before {
-	background-image: url("icons/bluesky.svg");
+	background-image: url("/assets/icons/bluesky.svg");
 }
 
 /*
