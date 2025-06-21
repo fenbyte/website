@@ -45,6 +45,9 @@
     --button-current-bg: linear-gradient(#777,#9c9c9c);
     --button-current-border: 2px solid white;
     --button-current-shine: inset 0px 2px #BBBBBB, inset 0px -2px #7E7E7E;
+    --button-unused-text: grey;
+    --button-unused-bg: linear-gradient(#1c0f00,#391e00);
+    --button-unused-shine: inset 0px 2px #ffffff10, inset 0px -2px #1a0e00;
     --slash-colour: #aaa;
     --logo-glow: #ff880080;
 }
@@ -126,6 +129,18 @@ h2:after {
     color: var(--button-current-text);
     background: var(--button-current-bg);
     box-shadow: var(--button-current-shine);
+}
+
+.button.unused {
+    color: var(--button-unused-text);
+    background: var(--button-unused-bg);
+    box-shadow: var(--button-unused-shine);
+    pointer-events: none;
+    cursor: default;
+}
+
+.button.unused:before {
+    filter: invert(1) brightness(0.5);
 }
 
 iframe {

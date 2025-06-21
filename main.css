@@ -234,6 +234,10 @@ nav a.current {
 	background-image: url("/assets/icons/bluesky.svg");
 }
 
+#vrchat:before {
+	background-image: url("/assets/icons/vrchat.svg");
+}
+
 /*
 right sidebar
 */
