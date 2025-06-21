@@ -256,7 +256,7 @@ noscript {
 	width: 26px;
 	filter: invert(61%) sepia(73%) saturate(3219%) hue-rotate(359deg) brightness(101%) contrast(106%);
 	position: absolute;
-	bottom: -1px;
+	bottom: -4px;
 	right: 0;
 }
 
