@@ -1,4 +1,6 @@
 hit counter (steal from count.getloli.com)
 functional blog
-computer page
+tech page
+art gallery
+screenshot gallery
 88x31 buttons
