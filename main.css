@@ -6,7 +6,7 @@
 	display: grid;
 	place-content: center center;
 	column-gap: 2rem;
-	margin: 0;
+	margin: 0
 }
 
 #header p {
@@ -15,7 +15,7 @@
     font-weight: 1000;
     font-family: "Quicksand", sans-serif;
     font-size: 1.75em;
-    line-height: 1;
+    line-height: 1
 }
 
 #container {
@@ -23,60 +23,60 @@
     flex-direction: row;
     width: 100%;
     gap: 0.5em;
-    margin-top: 0.5em;
+    margin-top: 0.5em
 }
 
 #container .box {
     width: 20%;
-	min-width: 174px;
+	min-width: 174px
 }
 
 #container main.box {
-    width: 60%;
+    width: 60%
 }
 
 #container .button {
     display: block;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5em
 }
 
 @media (width < 720px) {
     #container {
-        flex-direction: column;
+        flex-direction: column
     }
     #container .box,#container main.box {
-        width: 100%;
+        width: 100%
     }
 
 }
 
 @media (720px <= width < 900px), (width < 540px) {
 	#me {
-		flex-direction: column-reverse;
+		flex-direction: column-reverse
 	}
 }
 
 @media (720px <= width < 754px), (width < 392px) {
 	h2 {
-		display: unset;
+		display: unset
 	}
 }
 
 .line {
-	display: flex;
+	display: flex
 }
 
 .line:after {
     content: '';
     border-top: 2px solid var(--accent);
     margin: 0.2em 0 0 10px;
-    flex: 1 0 20px;
+    flex: 1 0 20px
 }
 
 #me {
 	padding-top: 8px;
 	display: flex;
-	align-items: center;
+	align-items: center
 }
 
 #me img {
@@ -87,7 +87,7 @@
 #melists {
 	display: flex;
 	justify-content: center;
-	flex-grow: 1;
+	flex-grow: 1
 }
 
 #melists ul {
@@ -96,13 +96,13 @@
 	padding-top: 4px;
 	padding-bottom: 4px;
 	--melist-padding: 6px;
-	--melist-line-width: 2px;
+	--melist-line-width: 2px
 }
 
 ul#meleft {
 	text-align: right;
 	padding-right: calc(var(--melist-padding) + var(--melist-line-width));
-	position: relative;
+	position: relative
 }
 
 ul#meleft:after {
@@ -114,11 +114,11 @@ ul#meleft:after {
 	position: absolute;
 	top: 0;
 	right: 0;
-	border-radius: 16px;
+	border-radius: 16px
 }
 
 ul#meright {
-	padding-left: var(--melist-padding);
+	padding-left: var(--melist-padding)
 }
 
 #middle {
@@ -131,12 +131,12 @@ ul#meright {
 
 #leftsidebar {
 	font-family: "Outfit", system-ui;
-	font-size: 1rem;
+	font-size: 1rem
 }
 
 #rightsidebar {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column
 }
 
 /*
@@ -152,46 +152,46 @@ nav a:before,#socials a:before {
 	background-position: center;
 	background-repeat: no-repeat;
 	filter: invert(1);
-	background-size: contain;
+	background-size: contain
 }
 
 nav a.current:before {
-	filter: invert(0);
+	filter: invert(0)
 }
 
 nav a.current {
-	color: black;
+	color: black
 }
 
 #home:before {
-    background-image: url("/assets/icons/house.svg");
+    background-image: url("/assets/icons/house.svg")
 }
 
 #about:before {
-    background-image: url("/assets/icons/me.svg");
+    background-image: url("/assets/icons/me.svg")
 }
 
 #art:before {
-    background-image: url("/assets/icons/brush.svg");
+    background-image: url("/assets/icons/brush.svg")
 }
 
 #guestbook:before {
-    background-image: url("/assets/icons/book.svg");
+    background-image: url("/assets/icons/book.svg")
 }
 
 #blog:before {
-    background-image: url("/assets/icons/newspaper.svg");
+    background-image: url("/assets/icons/newspaper.svg")
 }
 
 #tech:before {
-    background-image: url("/assets/icons/computer.svg");
+    background-image: url("/assets/icons/computer.svg")
 }
 
 #socials {
 	margin-top: 16px;
 	gap: 6px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column
 }
 
 #socials a {
@@ -200,17 +200,17 @@ nav a.current {
 	font-size: 1.1em;
 	text-decoration: none;
 	position: relative;
-	transition: filter .1s linear;
+	transition: filter .1s linear
 }
 
 #socials a:hover {
-	filter: drop-shadow(0 0 3px white);
+	filter: drop-shadow(0 0 3px white)
 }
 
 #socials a:before {
 	width: 24px;
 	height: 24px;
-	margin-right: 16px;
+	margin-right: 16px
 }
 
 #socials a:after {
@@ -223,19 +223,19 @@ nav a.current {
 	top: 2px;
 	left: 31px;
 	transform: rotate(15deg);
-	border-radius: 16px;
+	border-radius: 16px
 }
 
 #discord:before {
-	background-image: url("/assets/icons/discord.svg");
+	background-image: url("/assets/icons/discord.svg")
 }
 
 #bluesky:before {
-	background-image: url("/assets/icons/bluesky.svg");
+	background-image: url("/assets/icons/bluesky.svg")
 }
 
 #vrchat:before {
-	background-image: url("/assets/icons/vrchat.svg");
+	background-image: url("/assets/icons/vrchat.svg")
 }
 
 /*
@@ -244,12 +244,12 @@ right sidebar
 
 noscript {
 	font-size: smaller;
-	margin-bottom: 12px;
+	margin-bottom: 12px
 }
 
 #nowplayingheader {
 	position: relative;
-	text-decoration: none;
+	text-decoration: none
 }
 
 #lastfm img {
@@ -257,56 +257,56 @@ noscript {
 	filter: invert(61%) sepia(73%) saturate(3219%) hue-rotate(359deg) brightness(101%) contrast(106%);
 	position: absolute;
 	bottom: -4px;
-	right: 0;
+	right: 0
 }
 
 #lastfmlink {
-	text-decoration: none;
+	text-decoration: none
 }
 
 #nowplaying {
 	margin-top: 6px;
 	display: flex;
 	color: var(--text);
-	margin-bottom: 12px;
+	margin-bottom: 12px
 }
 
 #nowplaying div {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	overflow: hidden;
+	overflow: hidden
 }
 
 #nowplaying p {
 	margin: 0;
 	margin-left: 4px;
-	white-space: nowrap;
+	white-space: nowrap
 }
 
 #songtitle {
-	font-size: 0.95em;
+	font-size: 0.95em
 }
 
 #songalbum, #songartist {
 	font-size: 0.85em;
-	height: 1em;
+	height: 1em
 }
 
 #nowplaying img {
 	height: 56px;
-	width: 56px;
+	width: 56px
 }
 
 #mytime {
-	font-size: 0.83em;
+	font-size: 0.83em
 }
 
 small {
-	margin-top: auto;
+	margin-top: auto
 }
 
 small, small a {
 	color: gray;
-	font-style: italic;
+	font-style: italic
 }

@@ -1,31 +1,37 @@
 @font-face {
     font-family: 'Inter'; font-display: optional;
     font-weight: 300 800; font-style: italic;
-    src: url('/assets/fonts/InterVariable-Italic.woff2') format("woff2-variations"), local('Inter Italic');
+    src: url('/assets/fonts/inter-italic.woff2') format("woff2-variations"), local('Inter Italic');
+    unicode-range: U+0020-007E, U+00A9, U+00AE, U+00A3, U+00A2, U+00A5, U+00BC-00BE, U+00F7, U+00D7, U+0398, U+03A9, U+03B1, U+03B2, U+03B8, U+03BB, U+03BC, U+03C0, U+0394, U+2013-2015, U+2022
 }
 @font-face {
     font-family: 'Inter'; font-display: block;
     font-weight: 100 800;
-    src: url('/assets/fonts/InterVariable.woff2') format("woff2-variations"), local('Inter');
+    src: url('/assets/fonts/inter.woff2') format("woff2-variations"), local('Inter');
+    unicode-range: U+0020-007E, U+00A9, U+00AE, U+00A3, U+00A2, U+00A5, U+00BC-00BE, U+00F7, U+00D7, U+0398, U+03A9, U+03B1, U+03B2, U+03B8, U+03BB, U+03BC, U+03C0, U+0394, U+2013-2015, U+2022
 }
 @font-face {
     font-family: 'Quicksand'; font-display: block;
     src: url('/assets/fonts/quicksand.woff2') format("woff2-variations"), local('Quicksand');
+    unicode-range: U+0020-007E, U+00A9, U+00A3, U+00A2, U+00A5
+}
+@font-face {
+    font-family: 'MuseoModerno'; font-display: block;
+    font-weight: 100 900; font-style: italic;
+    src: url('/assets/fonts/museomoderno-italic.woff2'), format("woff2-variations"), local('MuseoModerno Italic');
+    unicode-range: U+0020-007E, U+00A9, U+00A3, U+00A2, U+00A5
 }
 @font-face {
     font-family: 'MuseoModerno'; font-display: block;
     font-weight: 100 900;
-    src: url('/assets/fonts/museomoderno.woff2'), format("woff2-variations"), local('MuseoModerno')
-}
-@font-face {
-    font-family: 'MuseoModerno'; font-display: block;
-    font-weight: 100 900; font-style: italic;
-    src: url('/assets/fonts/museomoderno-italic.woff2'), format("woff2-variations"), local('MuseoModerno Italic')
+    src: url('/assets/fonts/museomoderno.woff2'), format("woff2-variations"), local('MuseoModerno');
+    unicode-range: U+0020-007E, U+00A9, U+00A3, U+00A2, U+00A5
 }
 @font-face {
     font-family: 'Outfit'; font-display: block;
     font-weight: 100 900; font-style: italic;
-    src: url('/assets/fonts/outfit.woff2'), format("woff2-variations"), local('Outfit')
+    src: url('/assets/fonts/outfit.woff2'), format("woff2-variations"), local('Outfit');
+    unicode-range: U+0020-007E, U+00A9, U+00A3, U+00A2, U+00A5
 }
 
 :root {
@@ -49,7 +55,7 @@
     --button-unused-bg: linear-gradient(#1c0f00,#391e00);
     --button-unused-shine: inset 0px 2px #ffffff10, inset 0px -2px #1a0e00;
     --slash-colour: #aaa;
-    --logo-glow: #ff880080;
+    --logo-glow: #ff880080
 }
 
 body {
@@ -64,7 +70,7 @@ body {
     margin: auto;
     padding: 8px;
     min-height: 100vh;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 h1 {
@@ -74,7 +80,7 @@ h1 {
     color: var(--accent);
     font-style: italic;
     filter: drop-shadow(0 0 8px var(--logo-glow));
-    line-height: 1;
+    line-height: 1
 }
 
 h2 {
@@ -87,14 +93,14 @@ h2 {
     width: 100%;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center
 }
 
 h2:after {
     content: '';
     border-top: 3px solid var(--accent);
     margin: 0.2em 0 0 10px;
-    flex: 1 0 20px;
+    flex: 1 0 20px
 }
 
 .box {
@@ -103,7 +109,7 @@ h2:after {
     padding: 10px;
     box-sizing: border-box;
     background: var(--box-bg);
-    box-shadow: var(--box-shine);
+    box-shadow: var(--box-shine)
 }
 
 .button {
@@ -114,21 +120,21 @@ h2:after {
     box-shadow: var(--button-shine);
     padding: 6px 8px;
     text-decoration: none;
-    align-self: center;
+    align-self: center
 }
 
 .button:hover{
-    background: var(--button-hover-bg);
+    background: var(--button-hover-bg)
 }
 
 .button:active {
-    background: var(--button-active-bg);
+    background: var(--button-active-bg)
 }
 
 .button.current {
     color: var(--button-current-text);
     background: var(--button-current-bg);
-    box-shadow: var(--button-current-shine);
+    box-shadow: var(--button-current-shine)
 }
 
 .button.unused {
@@ -136,19 +142,19 @@ h2:after {
     background: var(--button-unused-bg);
     box-shadow: var(--button-unused-shine);
     pointer-events: none;
-    cursor: default;
+    cursor: default
 }
 
 .button.unused:before {
-    filter: invert(1) brightness(0.5);
+    filter: invert(1) brightness(0.5)
 }
 
 iframe {
-    border: none;
+    border: none
 }
 
 a {
-    color: var(--accent);
+    color: var(--accent)
 }
 
 .smallcaps {
@@ -158,5 +164,5 @@ a {
     font-family: "Noto Sans", sans-serif;
     font-variant: small-caps;
 	font-weight: bold;
-    font-size: 1rem;
+    font-size: 1rem
 }
