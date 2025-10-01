@@ -130,8 +130,9 @@ ul#meright {
 }
 
 #leftsidebar {
-	font-family: "Outfit", system-ui;
-	font-size: 1rem
+	font-family: "Quicksand", system-ui;
+	font-size: 0.95rem;
+	font-weight: 550
 }
 
 #rightsidebar {
