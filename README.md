@@ -1,2 +1,1 @@
-# fen.cx
-the source "code" of my [website](https://fen.cx)
+# moved to [codeberg](https://codeberg.org/fenbyte/website)
