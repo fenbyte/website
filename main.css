@@ -142,7 +142,7 @@ ul#meright {
 /*
 	left sidebar
 */
-nav a:before,#socials a:before {
+nav a:before,#presences a:before {
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -187,14 +187,14 @@ nav a.current {
     background-image: url("/assets/icons/computer.svg")
 }
 
-#socials {
+#presences {
 	margin-top: 16px;
 	gap: 6px;
 	display: flex;
 	flex-direction: column
 }
 
-#socials a {
+#presences a {
 	margin-left: 6px;
 	color: var(--text);
 	font-size: 1.1em;
@@ -203,17 +203,17 @@ nav a.current {
 	transition: filter .1s linear
 }
 
-#socials a:hover {
+#presences a:hover {
 	filter: drop-shadow(0 0 3px white)
 }
 
-#socials a:before {
+#presences a:before {
 	width: 24px;
 	height: 24px;
 	margin-right: 16px
 }
 
-#socials a:after {
+#presences a:after {
 	display: inline-block;
 	content: '\200B';
 	width: 3px;
